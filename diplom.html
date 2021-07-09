@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="diplom.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navBar">
+    <div id="navBar">
+        <ul class="navList">
+            <li>
+                <a class="nav-link" href="#login" id="logout">Выход</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+ <main>
+     <div id="login">
+         <div class="mainTitle">
+             <h1>Дневник малыша</h1>
+         </div>
+
+         <div class="mainArea">
+             <div class="mainForm">
+                 <form name="firstForm" class="firstForm">
+                     <div class="form_part">
+                         <p>Имя</p>
+                         <input type="text" name="name" id="name">
+<!--                         <div class="error2" hidden>Поле обязательно для ввода</div>-->
+                     </div>
+
+                     <div class="form_part">
+                         <p>Email</p>
+                         <input type="email" name="email" id="email">
+<!--                         <div class="error" hidden>Поле обязательно для ввода</div>-->
+                     </div>
+
+                     <div class="form_part">
+                         <p>Пароль</p>
+                         <input type="password" name="password" id="password">
+<!--                         <div class="error3" hidden>Поле обязательно для ввода</div>-->
+                     </div>
+                     <div class="form_button">
+                         <input type="submit" name="saveLogin" id="saveLogin" value="Войти в кабинет пользователя">
+                     </div>
+                 </form>
+             </div>
+         </div>
+     </div>
+
+     <div id="mainPage">
+         <div class="mainPage">
+             <div class="mainMenu">
+                 <div class="babyInfo">
+                     <div class="babyPhoto">
+                         <img src="2.jpg" alt="baby photo" title="baby photo">
+                     </div>
+                     <div class="babyPhoto2" hidden>
+                         <img src="8.jpg" alt="baby photo male" title="baby photo male">
+                     </div>
+                     <div class="babyPhoto3" hidden>
+                         <img src="9.jpg" alt="baby photo female" title="baby photo female">
+                     </div>
+                    <div class="babyInfoMini">
+                        <div class="babyName">-имя-</div>
+                        <div class="babyDate">-год-</div>
+                        <div class="babyDate2">-месяц-</div>
+                        <div class="babyDate3">-день-</div>
+                    </div>
+
+                 </div>
+                 <div class="mainNav">
+                     <ul class="mainNav-list">
+                         <li><a class="nav-link" href="#notes" id="notes">Заметки о малыше</a></li>
+                         <li><a class="nav-link" href="#purchases" id="purchases">Покупки</a></li>
+                         <li><a class="nav-link" href="#growthRates" id="growthRates">Показатели роста и веса</a></li>
+                         <li><a class="nav-link" href="#customization" id="customization">Настройки</a></li>
+                     </ul>
+                 </div>
+             </div>
+             <div class="mainContent">
+
+                 <div class="notes">
+                     <h2>Заметки о малыше</h2>
+                     <div class="contentNotes">
+                         <div class="addNotes">
+                             <form name="notesForm" class="notesForm">
+                                 <p>Дата</p>
+                                 <input type="date" name="date" id="dateNote">
+                                 <p>Рост, (см)</p>
+                                 <input type="text" name="babyHeight" id="babyHeight">
+                                 <p>Вес, (кг)</p>
+                                 <input type="text" name="babyWeight" id="babyWeight">
+                                 <p>Важные отметки</p>
+                                 <input type="text" name="babyImpMark" id="babyImpMark">
+                                 <p>Достижения</p>
+                                 <input type="text" name="babyAttainment" id="babyAttainment">
+                             </form>
+                             <div class="addNotesBtn">
+                                 <input type="submit" name="addNotes" id="addNotes" value="Добавить заметку">
+                             </div>
+                         </div>
+                         <div class="notesPlan">
+                             <h5>Список заметок</h5>
+                             <div class="notesPlanCont">
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+
+                 <div class="purchases">
+                     <h2>Покупки</h2>
+                     <div class="contentPurchases">
+                         <div class="purchasesPlan">
+                             <div class="purchasesPlanCont"></div>
+                         </div>
+                     </div>
+                     <div class="addPurchases">
+                         <textarea id="purchasesText" placeholder="" required="" autofocus=""></textarea>
+                     </div>
+                     <div class="addPurchases">
+                         <button class="addPurchasesBtn" id="addPurchases" type="submit">Добавить покупку</button>
+                     </div>
+                 </div>
+
+                 <div class="growthRates">
+                     <h2>Показатели роста и веса</h2>
+                     <div class="contentRates">
+                         <div class="contHeightRates">
+                             <canvas id="growChart" width="400" height="400"></canvas>
+                         </div>
+                         <div class="contWeightRates">
+                             <canvas id="weightChart" width="400" height="400"></canvas>
+                         </div>
+                     </div>
+                 </div>
+
+                 <div class="customization" >
+                     <h2>Настройки</h2>
+                     <div class="contentCustomization">
+                         <form name="customizationForm" class="customizationForm">
+                             <div class="form_part_customization">
+                                 <p>Имя ребенка</p>
+                                 <input type="text" name="name" id="nameCust">
+                             </div>
+                             <div class="form_part_customization">
+                                 <p>Дата рождения</p>
+                                 <input type="date" name="date" id="dateCust">
+                             </div>
+
+                             <div class="form_part_customization2">
+                                 <p>Пол ребенка</p>
+                                 <input type="radio" name="gender" id="maleCust" value="Мужской">
+                                 <label for="maleCust">Мужской</label>
+                                 <input type="radio" name="gender" id="femaleCust" value="Женский">
+                                 <label for="femaleCust">Женский</label>
+                             </div>
+                             <div class="form_part_customization3">
+                                 <input type="file" name="photo" id="photoCust" multiple accept="image/*,image/jpeg">
+                             </div>
+                             <div class="form_button_customization">
+                                 <input type="submit" name="saveCustomization" id="saveCustomization" value="Сохранить настройки">
+                             </div>
+                         </form>
+                         <div class="customPlanCont" hidden></div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </main>
+
+<script src="./lib/chart.min.js"></script>
+<script src="diplom.js"></script>
+</body>
+</html>

@@ -1,0 +1,553 @@
+/*Основное*/
+
+body{
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+input button a :active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0;
+}
+
+/*Навигация*/
+
+.navBar{
+    background: #ccdcd2;
+    height: 5vh;
+}
+
+.navList{
+    display: flex;
+    list-style-type: none;
+    padding-top: 9px;
+    margin: 0;
+}
+
+.navList a{
+    color: black;
+    text-decoration: none;
+    margin-left: 120px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 0 20px 0 20px;
+    border: #2F4F4F solid 1px;
+}
+
+.navList a:hover{
+    background-color: #2F4F4F;
+    color: #eeeeee;
+}
+
+/*Страница логина*/
+
+#login{
+    height: 95vh;
+    background-image: url("1.jpg");
+    background-size: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.mainTitle{
+    font-family: 'Caveat', cursive;
+    text-align: center;
+    font-size: 20px;
+    color: #2F4F4F;
+    width: 100%;
+    height: 160px;
+    background: linear-gradient(180deg, rgba(204,220,210,1) 44%, rgba(255,255,255,0.6225840678068102) 77%);
+}
+
+.mainArea{
+    padding-left: 40%;
+}
+
+.form_part input{
+    width: 300px;
+    height: 25px;
+    border-radius: 5px;
+    border-color: #2F4F4F;
+    cursor: pointer;
+}
+
+.form_button input{
+    width: 310px;
+    height: 30px;
+    border-radius: 5px;
+    border-color: #2F4F4F;
+    background-color: #ccdcd2;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+.form_button input:hover{
+    background-color: #2F4F4F;
+    color: #eeeeee;
+}
+
+/*Главная страница приложения*/
+
+.mainPage{
+    height: 95vh;
+    background-size: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+}
+
+/*Главная станица меню*/
+
+.mainMenu{
+    width: 600px;
+    background: linear-gradient(180deg, rgba(204,220,210,1) 44%, rgba(255,255,255,1) 100%);
+    height: 100%;
+}
+
+.mainContent{
+    width: 100%;
+}
+
+.babyInfo{
+    margin-top: 20px;
+    height: 170px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.babyPhoto, .babyPhoto2, .babyPhoto3{
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.babyPhoto img, .babyPhoto2 img, .babyPhoto3 img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.babyName, .babyDate, .babyDate2, .babyDate3{
+    padding-top: 10px;
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    font-size: 25px;
+    color: #2F4F4F;
+    padding-right: 100px;
+}
+
+.mainNav-list{
+    list-style-type: none;
+}
+
+.mainNav-list li{
+    padding-top: 80px;
+    text-align: center;
+    margin-left: -70px;
+}
+
+.mainNav-list a{
+    text-decoration: none;
+    font-family: 'Caveat', cursive;
+    font-size: 25px;
+    color: #2F4F4F;
+}
+
+
+/*Заметки*/
+
+.notes{
+    height: 95vh;
+    background-image: url("3.jpg");
+    background-size: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.notes h2{
+    padding-top: 20px;
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    color: #2F4F4F;
+    font-size: 30px;
+}
+
+.purchases{
+    height: 95vh;
+    background-image: url("4.jpg");
+    background-size: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.purchases h2{
+    padding-top: 20px;
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    color: #2F4F4F;
+    font-size: 30px;
+}
+
+.growthRates{
+    height: 95vh;
+    background-image: url("5.jpg");
+    background-size: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.growthRates h2{
+    padding-top: 20px;
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    color: #2F4F4F;
+    font-size: 30px;
+}
+
+.customization{
+    height: 95vh;
+    background-image: url("7.jpg");
+    background-size: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.customization h2{
+    padding-top: 20px;
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    color: #2F4F4F;
+    font-size: 30px;
+}
+
+
+/*Настройки*/
+
+.contentCustomization{
+    padding-left: 15%;
+    padding-top: 100px;
+}
+
+.customizationForm{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 120px 150px 1fr;
+
+}
+
+.form_part_customization input{
+    width: 300px;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid #2F4F4F;
+    cursor: pointer;
+}
+
+.form_part_customization3{
+    padding-top: 50px;
+}
+
+.form_button_customization input{
+    width: 310px;
+    height: 30px;
+    border-radius: 5px;
+    border-color: #2F4F4F;
+    background-color: #ccdcd2;
+    cursor: pointer;
+    margin-top: 40px;
+    margin-left: 50%;
+}
+
+.form_button_customization input:hover{
+    background-color: #2F4F4F;
+    color: #eeeeee;
+}
+
+/*Покупки*/
+
+.contentPurchases{
+    width: 100%;
+}
+
+.purchasesPlan {
+    width: 60%;
+    margin: 20px auto 0 auto;
+    height: 500px;
+    border: 2px solid #2F4F4F ;
+    border-radius: 5px;
+    background-color: rgba(204,220,210, 0.2);
+}
+
+.notesPlan h5, .contWeightRates h5, .contHeightRates h5{
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    color: #2F4F4F;
+    font-size: 25px;
+    margin: 0;
+}
+
+.addPurchases{
+    width: 40%;
+    margin: 20px auto 0 auto;
+}
+
+.addPurchases textarea{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #2F4F4F;
+    border-radius: 5px;
+    background-color: rgba(204,220,210, 0.5);
+    background-color: white;
+}
+
+.addPurchases button {
+    width: 100%;
+    height: 20px;
+    border-radius: 5px;
+    border-color: #2F4F4F;
+    background-color: #ccdcd2;
+    cursor: pointer;
+}
+
+.purchasesPlanContMin{
+    width: 90%;
+    margin: 10px auto auto;
+    border: 1px solid #2F4F4F;
+    border-radius: 5px;
+    height: 20px;
+    text-align: center;
+    background-color: white;
+}
+
+ /*Заметки*/
+
+.contentNotes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.addNotes{
+    width: 300px;
+    height: 600px;
+    border: 2px solid #2F4F4F;
+    border-radius: 5px;
+    background-color: rgba(204,220,210, 0.2);
+    text-align: center;
+}
+
+.notesPlan{
+    width: 700px;
+    height: 600px;
+    border: 2px solid #2F4F4F;
+    border-radius: 5px;
+    background-color: rgba(204,220,210, 0.2);
+}
+
+.addNotesBtn input{
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 50px;
+    border-color: #2F4F4F;
+    background-color: #ccdcd2;
+    cursor: pointer;
+}
+
+.notesForm input{
+    padding-top: 10px;
+    width: 250px;
+    height: 30px;
+    border: 1px solid #2F4F4F;
+    border-radius: 5px;
+}
+
+.notesPlanCont{
+    width: 700px;
+    height: 565px;
+    display: grid;
+    grid-template-columns: 340px 340px;
+    grid-template-rows: 120px 120px 120px 120px;
+    overflow-y: scroll
+}
+
+.notesCont{
+    margin-top: 10px;
+    padding-left: 10px;
+    border: 1px solid #2F4F4F;
+    border-radius: 5px;
+    background-color: white;
+}
+
+/*Показатели роста и веса*/
+
+.contentRates{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.contHeightRates, .contWeightRates{
+    width: 500px;
+    height: 500px;
+    border: 2px solid #2F4F4F;
+    border-radius: 5px;
+    background-color: rgba(204,220,210, 0.2);
+}
+
+
+@media all and (max-width: 1200px){
+    .mainPage{
+        width: 100%;
+        background-size: 100%;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        display: block;
+    }
+
+    .mainMenu{
+        width: 100%;
+        background: linear-gradient(180deg, rgba(204,220,210,1) 44%, rgba(255,255,255,1) 100%);
+        height: 300px;
+    }
+    .mainNav-list li{
+        padding-top: 10px;
+        display: inline-block;
+        margin-left: 40px;
+    }
+
+    .mainNav-list{
+        list-style-type: none;
+    }
+
+    .babyInfo{
+        margin-top: 0;
+        height: 170px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .purchasesPlan {
+        width: 95%;
+        height: 500px;
+        margin: 0 20px 0 20px;
+        border: 2px solid #2F4F4F ;
+        border-radius: 5px;
+        background-color: rgba(204,220,210, 0.2);
+    }
+
+    .purchasesPlanContMin{
+        margin: 10px auto auto;
+        border: 1px solid #2F4F4F;
+        border-radius: 5px;
+        width: 90%;
+        height: 20px;
+        text-align: center;
+        background-color: white;
+    }
+    .addPurchases{
+        width: 40%;
+        margin: 20px auto 0 auto;
+        padding-bottom: 10px;
+    }
+
+
+    .contentNotes{
+        display: block;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .addNotes{
+        width: 95%;
+        height: 100%;
+        margin: 0 20px 0 20px;
+        border: 2px solid #2F4F4F;
+        border-radius: 5px;
+        background-color: rgba(204,220,210, 0.2);
+        text-align: center;
+    }
+
+    .notesForm{
+        padding-top: 30px;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .addNotesBtn{
+        padding-bottom: 30px;
+    }
+
+    .notesPlan{
+        width: 95%;
+        margin: 20px 20px 0 20px;
+    }
+
+    .notesPlanCont{
+        width: 100%;
+        height: 565px;
+        display: block;
+        overflow-y: scroll
+    }
+
+    .contentRates{
+        display: block;
+        padding-bottom: 20px;
+    }
+
+    .contHeightRates, .contWeightRates{
+        width: 500px;
+        height: 500px;
+        margin: 20px auto 20px auto;
+        border: 2px solid #2F4F4F;
+        border-radius: 5px;
+        background-color: rgba(204,220,210, 0.2);
+    }
+
+    .notes{
+        height: 100%;
+        background-image: url("3.jpg");
+        background-size: 100%;
+        background-position: bottom;
+        background-repeat: no-repeat;
+    }
+
+    .purchases{
+        height: 100%;
+        background-image: url("4.jpg");
+        background-size: 100%;
+        background-position: bottom;
+        background-repeat: no-repeat;
+    }
+
+    .growthRates{
+        height: 100%;
+        background-image: url("5.jpg");
+        background-size: 100%;
+        background-position: bottom;
+        background-repeat: no-repeat;
+    }
+
+    .customization{
+        height: 100%;
+        background-image: url("7.jpg");
+        background-size: 100%;
+        background-position: bottom;
+        background-repeat: no-repeat;
+    }
+
+    .contentCustomization{
+        padding-top: 100px;
+        padding-bottom: 30px;
+    }
+}
+
